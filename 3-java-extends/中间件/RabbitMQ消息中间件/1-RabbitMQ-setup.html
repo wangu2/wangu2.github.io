@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>1，Windows 上 RabbitMQ安装 | YOU CAN DO IT @ WANGU</title>
+    <meta name="generator" content="VuePress 1.5.4">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="description" content="">
+    <link rel="preload" href="/assets/css/0.styles.57b1b43f.css" as="style"><link rel="preload" href="/assets/js/app.7efbe7ba.js" as="script"><link rel="preload" href="/assets/js/2.6911186c.js" as="script"><link rel="preload" href="/assets/js/11.79010c3f.js" as="script"><link rel="prefetch" href="/assets/js/10.0dd62fe5.js"><link rel="prefetch" href="/assets/js/12.3e4763f5.js"><link rel="prefetch" href="/assets/js/13.7e1a5336.js"><link rel="prefetch" href="/assets/js/14.3fa1a476.js"><link rel="prefetch" href="/assets/js/15.f9994be5.js"><link rel="prefetch" href="/assets/js/16.289306ba.js"><link rel="prefetch" href="/assets/js/17.90f30f83.js"><link rel="prefetch" href="/assets/js/18.745e118b.js"><link rel="prefetch" href="/assets/js/19.bfba5612.js"><link rel="prefetch" href="/assets/js/20.e6073ffb.js"><link rel="prefetch" href="/assets/js/21.53c46aba.js"><link rel="prefetch" href="/assets/js/22.6918c566.js"><link rel="prefetch" href="/assets/js/23.bdb07654.js"><link rel="prefetch" href="/assets/js/24.2208129a.js"><link rel="prefetch" href="/assets/js/25.7bfd10bc.js"><link rel="prefetch" href="/assets/js/26.9d2bd670.js"><link rel="prefetch" href="/assets/js/3.b0fe903f.js"><link rel="prefetch" href="/assets/js/4.9b4a50d5.js"><link rel="prefetch" href="/assets/js/5.5f3bf129.js"><link rel="prefetch" href="/assets/js/6.defbe399.js"><link rel="prefetch" href="/assets/js/7.7077d182.js"><link rel="prefetch" href="/assets/js/8.8142661f.js"><link rel="prefetch" href="/assets/js/9.67779462.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.57b1b43f.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">YOU CAN DO IT @ WANGU</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="基本的" class="dropdown-title"><span class="title">基本的</span> <span class="arrow down"></span></button> <button type="button" aria-label="基本的" class="mobile-dropdown-title"><span class="title">基本的</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/1-base/java/java-oop.html" class="nav-link">
+  Java 基础
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Java Spring" class="dropdown-title"><span class="title">Java Spring</span> <span class="arrow down"></span></button> <button type="button" aria-label="Java Spring" class="mobile-dropdown-title"><span class="title">Java Spring</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          编辑器
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/#2" class="nav-link">
+  //TODO IntelliJ IDEA
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Spring Boot
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/2-java-spring/Spring/SpringBoot/IDEA创建SpringBoot/1-idea-create-springboot.html" class="nav-link">
+  Spring Boot - 多模块项目创建
+</a></li><li class="dropdown-subitem"><a href="/#3" class="nav-link">
+  //TODO Spring Boot - Helloword
+</a></li><li class="dropdown-subitem"><a href="/#4" class="nav-link">
+  //TODO Spring Boot - 多配置文件
+</a></li><li class="dropdown-subitem"><a href="/#5" class="nav-link">
+  //TODO Spring Boot - LogBack日志配置
+</a></li><li class="dropdown-subitem"><a href="/#6" class="nav-link">
+  //TODO Spring Boot - Swagger UI
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Spring Security
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/#7" class="nav-link">
+  //TODO 初始化
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="中间件" class="dropdown-title"><span class="title">中间件</span> <span class="arrow down"></span></button> <button type="button" aria-label="中间件" class="mobile-dropdown-title"><span class="title">中间件</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/3-java-extends/中间件/RabbitMQ消息中间件/1-RabbitMQ-setup.html" class="nav-link">
+  RabbitMQ 消息队列
+</a></li><li class="dropdown-item"><!----> <a href="/3-java-extends/中间件/SpringBoot2.0集成Activiti6/1-springboot-activit-star.html" class="nav-link">
+  Activiti6 工作流引擎
+</a></li><li class="dropdown-item"><!----> <a href="/#8" class="nav-link">
+  //TODO Shardingsphere 分库分表
+</a></li><li class="dropdown-item"><!----> <a href="/#9" class="nav-link">
+  //TODO Mybaits-Plus ORM 数据持久
+</a></li><li class="dropdown-item"><!----> <a href="/#10" class="nav-link">
+  //TODO Druid 连接池
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="翻过这座山" class="dropdown-title"><span class="title">翻过这座山</span> <span class="arrow down"></span></button> <button type="button" aria-label="翻过这座山" class="mobile-dropdown-title"><span class="title">翻过这座山</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/5-up/第一阶段/1-Mybaits源码解析.html" class="nav-link">
+  1.1.持久层框架设计实现及MyBatis源码分析
+</a></li><li class="dropdown-item"><!----> <a href="/5-up/第一阶段/2-IoC容器设计及Spring源码.html" class="nav-link">
+  1.2.IoC容器设计实现及Spring源码分析
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工具" class="dropdown-title"><span class="title">工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="工具" class="mobile-dropdown-title"><span class="title">工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/6-tools/OpenVPN/1-搭建-OpenVPN.html" class="nav-link">
+  服务器搭建 OpenVPN
+</a></li></ul></div></div><div class="nav-item"><a href="/6-tools/0-小工具集合.html" class="nav-link">
+  集
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🏀" class="dropdown-title"><span class="title">🏀</span> <span class="arrow down"></span></button> <button type="button" aria-label="🏀" class="mobile-dropdown-title"><span class="title">🏀</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/0-life/basketball/1-day1.html" class="nav-link">
+  球性训练计划
+</a></li></ul></div></div><div class="nav-item"><a href="/关于.html" class="nav-link">
+  关于
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="基本的" class="dropdown-title"><span class="title">基本的</span> <span class="arrow down"></span></button> <button type="button" aria-label="基本的" class="mobile-dropdown-title"><span class="title">基本的</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/1-base/java/java-oop.html" class="nav-link">
+  Java 基础
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Java Spring" class="dropdown-title"><span class="title">Java Spring</span> <span class="arrow down"></span></button> <button type="button" aria-label="Java Spring" class="mobile-dropdown-title"><span class="title">Java Spring</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          编辑器
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/#2" class="nav-link">
+  //TODO IntelliJ IDEA
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Spring Boot
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/2-java-spring/Spring/SpringBoot/IDEA创建SpringBoot/1-idea-create-springboot.html" class="nav-link">
+  Spring Boot - 多模块项目创建
+</a></li><li class="dropdown-subitem"><a href="/#3" class="nav-link">
+  //TODO Spring Boot - Helloword
+</a></li><li class="dropdown-subitem"><a href="/#4" class="nav-link">
+  //TODO Spring Boot - 多配置文件
+</a></li><li class="dropdown-subitem"><a href="/#5" class="nav-link">
+  //TODO Spring Boot - LogBack日志配置
+</a></li><li class="dropdown-subitem"><a href="/#6" class="nav-link">
+  //TODO Spring Boot - Swagger UI
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Spring Security
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/#7" class="nav-link">
+  //TODO 初始化
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="中间件" class="dropdown-title"><span class="title">中间件</span> <span class="arrow down"></span></button> <button type="button" aria-label="中间件" class="mobile-dropdown-title"><span class="title">中间件</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/3-java-extends/中间件/RabbitMQ消息中间件/1-RabbitMQ-setup.html" class="nav-link">
+  RabbitMQ 消息队列
+</a></li><li class="dropdown-item"><!----> <a href="/3-java-extends/中间件/SpringBoot2.0集成Activiti6/1-springboot-activit-star.html" class="nav-link">
+  Activiti6 工作流引擎
+</a></li><li class="dropdown-item"><!----> <a href="/#8" class="nav-link">
+  //TODO Shardingsphere 分库分表
+</a></li><li class="dropdown-item"><!----> <a href="/#9" class="nav-link">
+  //TODO Mybaits-Plus ORM 数据持久
+</a></li><li class="dropdown-item"><!----> <a href="/#10" class="nav-link">
+  //TODO Druid 连接池
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="翻过这座山" class="dropdown-title"><span class="title">翻过这座山</span> <span class="arrow down"></span></button> <button type="button" aria-label="翻过这座山" class="mobile-dropdown-title"><span class="title">翻过这座山</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/5-up/第一阶段/1-Mybaits源码解析.html" class="nav-link">
+  1.1.持久层框架设计实现及MyBatis源码分析
+</a></li><li class="dropdown-item"><!----> <a href="/5-up/第一阶段/2-IoC容器设计及Spring源码.html" class="nav-link">
+  1.2.IoC容器设计实现及Spring源码分析
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工具" class="dropdown-title"><span class="title">工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="工具" class="mobile-dropdown-title"><span class="title">工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/6-tools/OpenVPN/1-搭建-OpenVPN.html" class="nav-link">
+  服务器搭建 OpenVPN
+</a></li></ul></div></div><div class="nav-item"><a href="/6-tools/0-小工具集合.html" class="nav-link">
+  集
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🏀" class="dropdown-title"><span class="title">🏀</span> <span class="arrow down"></span></button> <button type="button" aria-label="🏀" class="mobile-dropdown-title"><span class="title">🏀</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/0-life/basketball/1-day1.html" class="nav-link">
+  球性训练计划
+</a></li></ul></div></div><div class="nav-item"><a href="/关于.html" class="nav-link">
+  关于
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/3-java-extends/中间件/RabbitMQ消息中间件/1-RabbitMQ-setup.html" class="active sidebar-link">1，Windows 上 RabbitMQ安装</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/3-java-extends/中间件/RabbitMQ消息中间件/1-RabbitMQ-setup.html#安装erlang" class="sidebar-link">安装Erlang</a></li><li class="sidebar-sub-header"><a href="/3-java-extends/中间件/RabbitMQ消息中间件/1-RabbitMQ-setup.html#安装rabbitmq" class="sidebar-link">安装RabbitMQ</a></li><li class="sidebar-sub-header"><a href="/3-java-extends/中间件/RabbitMQ消息中间件/1-RabbitMQ-setup.html#配置rabbitmq" class="sidebar-link">配置RabbitMQ</a></li><li class="sidebar-sub-header"><a href="/3-java-extends/中间件/RabbitMQ消息中间件/1-RabbitMQ-setup.html#过程中遇到的问题" class="sidebar-link">过程中遇到的问题</a></li></ul></li><li><a href="/3-java-extends/中间件/RabbitMQ消息中间件/2-RabbitMQ-context.html" class="sidebar-link">2，RabbitMQ介绍</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/3-java-extends/中间件/RabbitMQ消息中间件/2-RabbitMQ-context.html#amqp高级消息队列协议" class="sidebar-link">AMQP高级消息队列协议</a></li><li class="sidebar-sub-header"><a href="/3-java-extends/中间件/RabbitMQ消息中间件/2-RabbitMQ-context.html#rabbitmq优势" class="sidebar-link">RabbitMQ优势</a></li><li class="sidebar-sub-header"><a href="/3-java-extends/中间件/RabbitMQ消息中间件/2-RabbitMQ-context.html#rabbitmq组件" class="sidebar-link">RabbitMQ组件</a></li></ul></li><li><a href="/3-java-extends/中间件/RabbitMQ消息中间件/3-RabbitMQ-SpringBoot.html" class="sidebar-link">3，SpringBoot整合MQ</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/3-java-extends/中间件/RabbitMQ消息中间件/3-RabbitMQ-SpringBoot.html#以bean方式注入" class="sidebar-link">以Bean方式注入</a></li></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="_1-windows-上-rabbitmq安装"><a href="#_1-windows-上-rabbitmq安装" class="header-anchor">#</a> 1，Windows 上 RabbitMQ安装</h1> <p>RabbitMQ基于AMQP协议，遵循Mozilla Public License开源协议。
+采用 Erlang 实现的工业级的消息队列(MQ)服务器，Rabbit MQ 是建立在Erlang OTP平台上。
+所以装RabbitMQ服务器必须首先安装 Erlang 运行环境。</p> <p><strong>安装Erlang需要先确认当前RabbitMQ所依赖的Erlang版本号</strong></p> <p>下载地址</p> <ul><li>Erlang：https://www.erlang.org/downloads</li> <li>RabbitMQ：https://www.rabbitmq.com/download.html</li></ul> <h2 id="安装erlang"><a href="#安装erlang" class="header-anchor">#</a> 安装Erlang</h2> <p>当前需要安装的RabbitMQ 3.8.5 ，Erlang兼容版本21.3~23.X
+下载安装包后配置一下Erlang环境变量即可</p> <p><img src="/img/image-20200729110435006.png" alt="image-20200729110435006"></p> <h2 id="安装rabbitmq"><a href="#安装rabbitmq" class="header-anchor">#</a> 安装RabbitMQ</h2> <p>RabbitMQ安装后是作为Windows Service服务在后台运行，安装完毕后查看对应服务列表</p> <p><img src="/img/image-20200729110817584.png" alt="image-20200729110817584"></p> <p>配置环境变量，追加至Path变量内</p> <p><img src="/img/image-20200729111106920.png" alt="image-20200729110817584"></p> <p><img src="/img/image-20200729111336153.png" alt="image-20200729111336153"></p> <h2 id="配置rabbitmq"><a href="#配置rabbitmq" class="header-anchor">#</a> 配置RabbitMQ</h2> <p>配置好环境变量后查看MQ插件列表然后进行启用操作</p> <div class="language-powershell line-numbers-mode"><pre class="language-powershell"><code>C:\Users\Administrator&gt;rabbitmq<span class="token operator">-</span>plugins list
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>启用 rabbitmq_management 插件(在线管理UI)</p> <div class="language-powershell line-numbers-mode"><pre class="language-powershell"><code>C:\Users\Administrator&gt;rabbitmq<span class="token operator">-</span>plugins enable rabbitmq_management
+
+Enabling plugins on node rabbit@WIN<span class="token operator">-</span>R8A10FS93QJ:
+rabbitmq_management
+The following plugins have been configured:
+  rabbitmq_management
+  rabbitmq_management_agent
+  rabbitmq_web_dispatch
+Applying plugin configuration to rabbit@WIN<span class="token operator">-</span>R8A10FS93QJ<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+The following plugins have been enabled:
+  rabbitmq_management
+  rabbitmq_management_agent
+  rabbitmq_web_dispatch
+
+<span class="token function">set</span> 3 plugins<span class="token punctuation">.</span>
+Offline change<span class="token punctuation">;</span> changes will take effect at broker restart<span class="token punctuation">.</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><p>根据提示重启一下RabbitMQ服务，打开浏览器 http://localhost:15672/ ，使用 guest/guest 默认账户进行登录</p> <h3 id="rabbitmq端口配置"><a href="#rabbitmq端口配置" class="header-anchor">#</a> RabbitMQ端口配置</h3> <p>在服务器上需要关闭防火墙或配置端口入站规则</p> <p>4369, 5672, 5671, 25672, 35672-35682, 15672, 61613, 61614, 1883, 8883, 15674, 15675</p> <p>端口描述查看官网地址进了解: https://www.rabbitmq.com/install-windows.html</p> <p><img src="/img/image-20200730111923111.png" alt="image-20200730111923111"></p> <h3 id="rabbitmq数据存储目录"><a href="#rabbitmq数据存储目录" class="header-anchor">#</a> RabbitMQ数据存储目录</h3> <p>在环境变量中已经配置了RabbitMQ批处理脚本，这边可以直接执行</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>// <span class="token number">1</span>, 移除当前服务
+rabbitmq-service remove
+
+// <span class="token number">2</span>, 设置数据目录
+<span class="token builtin class-name">set</span> <span class="token assign-left variable">RABBITMQ_BASE</span><span class="token operator">=</span>D:<span class="token punctuation">\</span>RABBITMQ_SERVER<span class="token punctuation">\</span>DATA
+
+// <span class="token number">3</span>, 重新服务安装
+rabbitmq-service <span class="token function">install</span>
+
+// <span class="token number">4</span>, 启动服务
+rabbitmq-service start
+
+// <span class="token number">5</span>, 关闭RABBIT节点并重置
+rabbitmqctl stop_app
+rabbitmqctl reset
+
+// <span class="token number">6</span>, 安装在线管理插件
+rabbitmq-plugins <span class="token builtin class-name">enable</span> rabbitmq_management
+
+// <span class="token number">7</span>, 启动节点
+rabbitmqctl start_app
+
+// <span class="token number">8</span>, 重启服务
+rabbitmq-service stop
+rabbitmq-service start
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br></div></div><h3 id="rabbitmq-management添加用户"><a href="#rabbitmq-management添加用户" class="header-anchor">#</a> RabbitMQ-Management添加用户</h3> <p>登录控制台地址 http://localhost:15672/ ，选择admin模块</p> <p><img src="/img/image-20200730114755059.png" alt="image-20200730114755059"></p> <p>在 [ Add a user ] 选项卡中填写用户基本信息，填写完毕后在列表中点击刚才添加的用户 test</p> <p><img src="/img/image-20200730114918260.png" alt="image-20200730114918260"></p> <p>赋予 test 相关的权限内容</p> <p><img src="/img/image-20200730115013417.png" alt="image-20200730115013417"></p> <p>然后重新使用 test 即可进行重新登录</p> <h2 id="过程中遇到的问题"><a href="#过程中遇到的问题" class="header-anchor">#</a> 过程中遇到的问题</h2> <p>在使用 rabbitmqctl 命令时可能会出现 erlang.cookie 的问题，根据官网中的提示因为账户不一致的情况出现的这个问题。尝试使用一下解决方法，然后重新执行命令</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>// 拷贝文件
+C:<span class="token punctuation">\</span>Windows<span class="token punctuation">\</span>system32<span class="token punctuation">\</span>config<span class="token punctuation">\</span>systemprofile<span class="token punctuation">\</span>erlang.cookie
+
+// 移动文件 , administrator为当前系统登录
+C:<span class="token punctuation">\</span>Users<span class="token punctuation">\</span>administrator
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/3-java-extends/中间件/RabbitMQ消息中间件/2-RabbitMQ-context.html">
+        2，RabbitMQ介绍
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.7efbe7ba.js" defer></script><script src="/assets/js/2.6911186c.js" defer></script><script src="/assets/js/11.79010c3f.js" defer></script>
+  </body>
+</html>

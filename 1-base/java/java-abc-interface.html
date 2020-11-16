@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Java - 抽象类与接口 | YOU CAN DO IT @ WANGU</title>
+    <meta name="generator" content="VuePress 1.5.4">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="description" content="">
+    <link rel="preload" href="/assets/css/0.styles.57b1b43f.css" as="style"><link rel="preload" href="/assets/js/app.7efbe7ba.js" as="script"><link rel="preload" href="/assets/js/2.6911186c.js" as="script"><link rel="preload" href="/assets/js/7.7077d182.js" as="script"><link rel="prefetch" href="/assets/js/10.0dd62fe5.js"><link rel="prefetch" href="/assets/js/11.79010c3f.js"><link rel="prefetch" href="/assets/js/12.3e4763f5.js"><link rel="prefetch" href="/assets/js/13.7e1a5336.js"><link rel="prefetch" href="/assets/js/14.3fa1a476.js"><link rel="prefetch" href="/assets/js/15.f9994be5.js"><link rel="prefetch" href="/assets/js/16.289306ba.js"><link rel="prefetch" href="/assets/js/17.90f30f83.js"><link rel="prefetch" href="/assets/js/18.745e118b.js"><link rel="prefetch" href="/assets/js/19.bfba5612.js"><link rel="prefetch" href="/assets/js/20.e6073ffb.js"><link rel="prefetch" href="/assets/js/21.53c46aba.js"><link rel="prefetch" href="/assets/js/22.6918c566.js"><link rel="prefetch" href="/assets/js/23.bdb07654.js"><link rel="prefetch" href="/assets/js/24.2208129a.js"><link rel="prefetch" href="/assets/js/25.7bfd10bc.js"><link rel="prefetch" href="/assets/js/26.9d2bd670.js"><link rel="prefetch" href="/assets/js/3.b0fe903f.js"><link rel="prefetch" href="/assets/js/4.9b4a50d5.js"><link rel="prefetch" href="/assets/js/5.5f3bf129.js"><link rel="prefetch" href="/assets/js/6.defbe399.js"><link rel="prefetch" href="/assets/js/8.8142661f.js"><link rel="prefetch" href="/assets/js/9.67779462.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.57b1b43f.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">YOU CAN DO IT @ WANGU</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="基本的" class="dropdown-title"><span class="title">基本的</span> <span class="arrow down"></span></button> <button type="button" aria-label="基本的" class="mobile-dropdown-title"><span class="title">基本的</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/1-base/java/java-oop.html" class="nav-link">
+  Java 基础
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Java Spring" class="dropdown-title"><span class="title">Java Spring</span> <span class="arrow down"></span></button> <button type="button" aria-label="Java Spring" class="mobile-dropdown-title"><span class="title">Java Spring</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          编辑器
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/#2" class="nav-link">
+  //TODO IntelliJ IDEA
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Spring Boot
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/2-java-spring/Spring/SpringBoot/IDEA创建SpringBoot/1-idea-create-springboot.html" class="nav-link">
+  Spring Boot - 多模块项目创建
+</a></li><li class="dropdown-subitem"><a href="/#3" class="nav-link">
+  //TODO Spring Boot - Helloword
+</a></li><li class="dropdown-subitem"><a href="/#4" class="nav-link">
+  //TODO Spring Boot - 多配置文件
+</a></li><li class="dropdown-subitem"><a href="/#5" class="nav-link">
+  //TODO Spring Boot - LogBack日志配置
+</a></li><li class="dropdown-subitem"><a href="/#6" class="nav-link">
+  //TODO Spring Boot - Swagger UI
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Spring Security
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/#7" class="nav-link">
+  //TODO 初始化
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="中间件" class="dropdown-title"><span class="title">中间件</span> <span class="arrow down"></span></button> <button type="button" aria-label="中间件" class="mobile-dropdown-title"><span class="title">中间件</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/3-java-extends/中间件/RabbitMQ消息中间件/1-RabbitMQ-setup.html" class="nav-link">
+  RabbitMQ 消息队列
+</a></li><li class="dropdown-item"><!----> <a href="/3-java-extends/中间件/SpringBoot2.0集成Activiti6/1-springboot-activit-star.html" class="nav-link">
+  Activiti6 工作流引擎
+</a></li><li class="dropdown-item"><!----> <a href="/#8" class="nav-link">
+  //TODO Shardingsphere 分库分表
+</a></li><li class="dropdown-item"><!----> <a href="/#9" class="nav-link">
+  //TODO Mybaits-Plus ORM 数据持久
+</a></li><li class="dropdown-item"><!----> <a href="/#10" class="nav-link">
+  //TODO Druid 连接池
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="翻过这座山" class="dropdown-title"><span class="title">翻过这座山</span> <span class="arrow down"></span></button> <button type="button" aria-label="翻过这座山" class="mobile-dropdown-title"><span class="title">翻过这座山</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/5-up/第一阶段/1-Mybaits源码解析.html" class="nav-link">
+  1.1.持久层框架设计实现及MyBatis源码分析
+</a></li><li class="dropdown-item"><!----> <a href="/5-up/第一阶段/2-IoC容器设计及Spring源码.html" class="nav-link">
+  1.2.IoC容器设计实现及Spring源码分析
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工具" class="dropdown-title"><span class="title">工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="工具" class="mobile-dropdown-title"><span class="title">工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/6-tools/OpenVPN/1-搭建-OpenVPN.html" class="nav-link">
+  服务器搭建 OpenVPN
+</a></li></ul></div></div><div class="nav-item"><a href="/6-tools/0-小工具集合.html" class="nav-link">
+  集
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🏀" class="dropdown-title"><span class="title">🏀</span> <span class="arrow down"></span></button> <button type="button" aria-label="🏀" class="mobile-dropdown-title"><span class="title">🏀</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/0-life/basketball/1-day1.html" class="nav-link">
+  球性训练计划
+</a></li></ul></div></div><div class="nav-item"><a href="/关于.html" class="nav-link">
+  关于
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="基本的" class="dropdown-title"><span class="title">基本的</span> <span class="arrow down"></span></button> <button type="button" aria-label="基本的" class="mobile-dropdown-title"><span class="title">基本的</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/1-base/java/java-oop.html" class="nav-link">
+  Java 基础
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Java Spring" class="dropdown-title"><span class="title">Java Spring</span> <span class="arrow down"></span></button> <button type="button" aria-label="Java Spring" class="mobile-dropdown-title"><span class="title">Java Spring</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          编辑器
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/#2" class="nav-link">
+  //TODO IntelliJ IDEA
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Spring Boot
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/2-java-spring/Spring/SpringBoot/IDEA创建SpringBoot/1-idea-create-springboot.html" class="nav-link">
+  Spring Boot - 多模块项目创建
+</a></li><li class="dropdown-subitem"><a href="/#3" class="nav-link">
+  //TODO Spring Boot - Helloword
+</a></li><li class="dropdown-subitem"><a href="/#4" class="nav-link">
+  //TODO Spring Boot - 多配置文件
+</a></li><li class="dropdown-subitem"><a href="/#5" class="nav-link">
+  //TODO Spring Boot - LogBack日志配置
+</a></li><li class="dropdown-subitem"><a href="/#6" class="nav-link">
+  //TODO Spring Boot - Swagger UI
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Spring Security
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/#7" class="nav-link">
+  //TODO 初始化
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="中间件" class="dropdown-title"><span class="title">中间件</span> <span class="arrow down"></span></button> <button type="button" aria-label="中间件" class="mobile-dropdown-title"><span class="title">中间件</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/3-java-extends/中间件/RabbitMQ消息中间件/1-RabbitMQ-setup.html" class="nav-link">
+  RabbitMQ 消息队列
+</a></li><li class="dropdown-item"><!----> <a href="/3-java-extends/中间件/SpringBoot2.0集成Activiti6/1-springboot-activit-star.html" class="nav-link">
+  Activiti6 工作流引擎
+</a></li><li class="dropdown-item"><!----> <a href="/#8" class="nav-link">
+  //TODO Shardingsphere 分库分表
+</a></li><li class="dropdown-item"><!----> <a href="/#9" class="nav-link">
+  //TODO Mybaits-Plus ORM 数据持久
+</a></li><li class="dropdown-item"><!----> <a href="/#10" class="nav-link">
+  //TODO Druid 连接池
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="翻过这座山" class="dropdown-title"><span class="title">翻过这座山</span> <span class="arrow down"></span></button> <button type="button" aria-label="翻过这座山" class="mobile-dropdown-title"><span class="title">翻过这座山</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/5-up/第一阶段/1-Mybaits源码解析.html" class="nav-link">
+  1.1.持久层框架设计实现及MyBatis源码分析
+</a></li><li class="dropdown-item"><!----> <a href="/5-up/第一阶段/2-IoC容器设计及Spring源码.html" class="nav-link">
+  1.2.IoC容器设计实现及Spring源码分析
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工具" class="dropdown-title"><span class="title">工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="工具" class="mobile-dropdown-title"><span class="title">工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/6-tools/OpenVPN/1-搭建-OpenVPN.html" class="nav-link">
+  服务器搭建 OpenVPN
+</a></li></ul></div></div><div class="nav-item"><a href="/6-tools/0-小工具集合.html" class="nav-link">
+  集
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🏀" class="dropdown-title"><span class="title">🏀</span> <span class="arrow down"></span></button> <button type="button" aria-label="🏀" class="mobile-dropdown-title"><span class="title">🏀</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/0-life/basketball/1-day1.html" class="nav-link">
+  球性训练计划
+</a></li></ul></div></div><div class="nav-item"><a href="/关于.html" class="nav-link">
+  关于
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Java 基础</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/1-base/java/java-oop.html" class="sidebar-link">Java - 面向对象</a></li><li><a href="/1-base/java/java-abc-interface.html" aria-current="page" class="active sidebar-link">Java - 抽象类与接口</a></li><li><a href="/1-base/java/java-t-generic.html" class="sidebar-link">Java - 泛型</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>设计模式</span> <!----></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="java-抽象类与接口"><a href="#java-抽象类与接口" class="header-anchor">#</a> Java - 抽象类与接口</h1> <div class="custom-block tip"><p class="custom-block-title">基础概念</p> <p>抽象类和接口在设计模式以及架构中应用的非常广泛。</p></div> <p></p><div class="table-of-contents"><ul><li><a href="#抽象类与接口">抽象类与接口</a><ul><li><a href="#抽象类-abstract-class">抽象类（ abstract class ）</a></li><li><a href="#接口-interface">接口（ Interface ）</a></li><li><a href="#区别">区别</a></li></ul></li><li><a href="#写在后面">写在后面</a><ul><li><a href="#抽象类定义的意义">抽象类定义的意义？</a></li><li><a href="#接口定义的意义">接口定义的意义？</a></li><li><a href="#抽象类实现接口的意义是什么">抽象类实现接口的意义是什么？</a></li><li><a href="#为何会存在多个接口的情况">为何会存在多个接口的情况？</a></li></ul></li><li><a href="#关键词">关键词</a></li></ul></div><p></p> <h2 id="抽象类与接口"><a href="#抽象类与接口" class="header-anchor">#</a> 抽象类与接口</h2> <p>一个类可以实现多个接口，但类只能继承一个抽象类。</p> <p>抽象类：抽象类更像是定义类的规范，一旦继承必须全部实现。</p> <h3 id="抽象类-abstract-class"><a href="#抽象类-abstract-class" class="header-anchor">#</a> 抽象类（ abstract class ）</h3> <p>使用关键字 <strong>abstract class</strong> 来定义抽象类。抽象类不能被实例，所以抽象类只能被继承。</p> <p>抽象类中不一定包含抽象方法，但是有抽象方法的类必定是抽象类。</p> <div class="language-java line-numbers-mode"><pre class="language-java"><code><span class="token comment">// 定义</span>
+<span class="token keyword">public</span> <span class="token keyword">abstract</span> <span class="token keyword">class</span> <span class="token class-name">Fruit</span><span class="token punctuation">{</span> 
+
+    <span class="token comment">// 水果名称、水果分类</span>
+    <span class="token keyword">private</span> <span class="token class-name">String</span> name<span class="token punctuation">;</span>
+    <span class="token keyword">private</span> <span class="token class-name">String</span> type<span class="token punctuation">;</span>
+    <span class="token keyword">private</span> <span class="token class-name">Boolean</span> isPeeling<span class="token punctuation">;</span>
+
+    <span class="token comment">// 初始化</span>
+    <span class="token keyword">public</span> <span class="token class-name">Fruit</span><span class="token punctuation">(</span><span class="token class-name">String</span> name<span class="token punctuation">,</span> <span class="token class-name">String</span> type<span class="token punctuation">,</span> <span class="token class-name">Boolean</span> isPeeling<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">=</span> name<span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>type <span class="token operator">=</span> type<span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>isPeeling <span class="token operator">=</span> isPeeling<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>name
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">getType</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>type<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token class-name">Boolean</span> <span class="token function">getIsPeeling</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>isPeeling<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br></div></div><h4 id="抽象方法-abstract-void"><a href="#抽象方法-abstract-void" class="header-anchor">#</a> 抽象方法 （ abstract void ）</h4> <p>抽象的方法只存在于抽象类中，子类必须重写父类的抽象方法或者自身就是抽象类。</p> <p>抽象方法只是声明，并不包含方法主体。</p> <p>将子类中中通用字段以及基础的方法，提取至抽象类中方便子类继承，避免重复代码。</p> <div class="language-java line-numbers-mode"><pre class="language-java"><code><span class="token comment">// 定义</span>
+<span class="token keyword">public</span> <span class="token keyword">abstract</span> <span class="token keyword">class</span> <span class="token class-name">FruitPlus</span> <span class="token keyword">extends</span> <span class="token class-name">Fruit</span><span class="token punctuation">{</span> 
+
+    <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+
+    <span class="token comment">// 水果的产地</span>
+    <span class="token keyword">public</span> <span class="token keyword">abstract</span> <span class="token keyword">void</span> <span class="token function">placeOfOrigin</span><span class="token punctuation">(</span><span class="token class-name">String</span> place<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><details class="custom-block details"><summary>思考</summary> <p>抽象类也是类，它可以被继承（抽象继承抽象）也可以实现接口。抽象类像是定义类的规范，使得继承的子类变的规范减少子类代码冗余。</p></details> <h3 id="接口-interface"><a href="#接口-interface" class="header-anchor">#</a> 接口（ Interface ）</h3> <p>接口无法被实例化，但是可以被实现。一个实现接口的类，必须实现接口内所描述的所有方法，否则就必须声明为抽象类。</p> <p>接口中每一个方法也是隐式抽象的，接口中的方法会被<strong>隐式</strong>的指定为 <strong>public abstract</strong>（只能是 <strong>public abstract</strong>，其他修饰符都会报错）。<br>
+接口中可以含有变量，但是接口中的变量会被隐式的指定为 <strong>public static final</strong> 变量（并且只能是 <strong>public</strong>，用 <strong>private</strong> 修饰会报编译错误）。<br>
+接口中的方法是不能在接口中实现的，只能由实现接口的类来实现接口中的方法。</p> <blockquote><p>JDK 1.8 以后，接口里可以有静态方法和方法体了。</p></blockquote> <div class="language-java line-numbers-mode"><pre class="language-java"><code><span class="token comment">// 水果去皮</span>
+<span class="token keyword">public</span> <span class="token keyword">interface</span> <span class="token class-name">FruitDecorticate</span><span class="token punctuation">{</span>
+    <span class="token comment">// 声明接口方法</span>
+    <span class="token punctuation">[</span><span class="token keyword">public</span> <span class="token keyword">abstract</span><span class="token punctuation">]</span> <span class="token keyword">void</span> <span class="token function">decorticate</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 水果去核</span>
+<span class="token keyword">public</span> <span class="token keyword">interface</span> <span class="token class-name">FruitEnucleation</span><span class="token punctuation">{</span>
+    <span class="token comment">// 声明接口方法</span>
+    <span class="token punctuation">[</span><span class="token keyword">public</span> <span class="token keyword">abstract</span><span class="token punctuation">]</span> <span class="token keyword">void</span> <span class="token function">enucleation</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 增强型水果类</span>
+<span class="token keyword">public</span> <span class="token keyword">abstract</span> <span class="token keyword">class</span> <span class="token class-name">FruitPlus</span> <span class="token keyword">extends</span> <span class="token class-name">Fruit</span> <span class="token keyword">implements</span> <span class="token class-name">FruitDecorticate</span><span class="token punctuation">,</span> <span class="token class-name">FruitEnucleation</span> <span class="token punctuation">{</span> 
+
+    <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+
+    <span class="token comment">// 水果的产地</span>
+    <span class="token keyword">public</span> <span class="token keyword">abstract</span> <span class="token keyword">void</span> <span class="token function">placeOfOrigin</span><span class="token punctuation">(</span><span class="token class-name">String</span> place<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// 接口实现</span>
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">decorticate</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token comment">// 实现 FruitDecorticate 的接口方法</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">// 接口实现</span>
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">enucleation</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token comment">// 实现 FruitEnucleation 的接口方法</span>
+    <span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br></div></div><h4 id="接口多继承"><a href="#接口多继承" class="header-anchor">#</a> 接口多继承</h4> <p>接口支持多继承，使用关键字 <strong>extends</strong> 实现继承父接口的方法。</p> <div class="language-java line-numbers-mode"><pre class="language-java"><code><span class="token comment">// 水果去皮</span>
+<span class="token keyword">public</span> <span class="token keyword">interface</span> <span class="token class-name">FruitDecorticate</span><span class="token punctuation">{</span>
+    <span class="token comment">// 声明接口方法</span>
+    <span class="token punctuation">[</span><span class="token keyword">public</span> <span class="token keyword">abstract</span><span class="token punctuation">]</span> <span class="token keyword">void</span> <span class="token function">decorticate</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 水果去核</span>
+<span class="token keyword">public</span> <span class="token keyword">interface</span> <span class="token class-name">FruitEnucleation</span><span class="token punctuation">{</span>
+    <span class="token comment">// 声明接口方法</span>
+    <span class="token punctuation">[</span><span class="token keyword">public</span> <span class="token keyword">abstract</span><span class="token punctuation">]</span> <span class="token keyword">void</span> <span class="token function">enucleation</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 水果接口多继承 ( 当然 **FruitFun** 也可以拥有自己的方法 )</span>
+<span class="token keyword">public</span> <span class="token keyword">interface</span> <span class="token class-name">FruitFun</span> <span class="token keyword">extends</span> <span class="token class-name">FruitDecorticate</span><span class="token punctuation">,</span> <span class="token class-name">FruitEnucleation</span><span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+<span class="token comment">// 增强型水果类 ( 在这里只需要实现 **FruitFun** 即可拥有 **FruitDecorticate, FruitEnucleation** 接口所声明的方法 )</span>
+<span class="token keyword">public</span> <span class="token keyword">abstract</span> <span class="token keyword">class</span> <span class="token class-name">FruitPlus</span> <span class="token keyword">extends</span> <span class="token class-name">Fruit</span> <span class="token keyword">implements</span> <span class="token class-name">FruitFun</span> <span class="token punctuation">{</span> 
+
+    <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+
+    <span class="token comment">// 水果的产地</span>
+    <span class="token keyword">public</span> <span class="token keyword">abstract</span> <span class="token keyword">void</span> <span class="token function">placeOfOrigin</span><span class="token punctuation">(</span><span class="token class-name">String</span> place<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// 接口实现</span>
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">decorticate</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token comment">// 实现 FruitDecorticate 的接口方法</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">// 接口实现</span>
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">enucleation</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token comment">// 实现 FruitEnucleation 的接口方法</span>
+    <span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br></div></div><details class="custom-block details"><summary>思考</summary> <p>接口增强了类的扩展，根据业务的变化可以实现多个接口。</p></details> <h3 id="区别"><a href="#区别" class="header-anchor">#</a> 区别</h3> <h4 id="抽象类与接口-2"><a href="#抽象类与接口-2" class="header-anchor">#</a> 抽象类与接口</h4> <ul><li>抽象类中的成员变量可以是各种类型的，而接口中的成员变量只能是 public static final 类型的</li> <li>一个类只能继承一个抽象类，而一个类却可以实现多个接口</li></ul> <h4 id="接口与类"><a href="#接口与类" class="header-anchor">#</a> 接口与类</h4> <ul><li>接口没有构造方法，接口不能被实例</li> <li>接口中所有的方法必须是抽象方法</li> <li>接口不能包含成员变量，除了 static 和 final 变量</li> <li>接口支持多继承（只能继承接口），但类只能继承一个</li></ul> <h2 id="写在后面"><a href="#写在后面" class="header-anchor">#</a> 写在后面</h2> <h3 id="抽象类定义的意义"><a href="#抽象类定义的意义" class="header-anchor">#</a> 抽象类定义的意义？</h3> <p>抽象类是为子类提供一个公共的类型，封装子类中重复的内容。抽象的方法必须实现，虽然各个子类自身实现的内容不一样。</p> <h3 id="接口定义的意义"><a href="#接口定义的意义" class="header-anchor">#</a> 接口定义的意义？</h3> <p>增强了类的扩展性，如果当前的类不满足目前的业务，可以通过接口来拓展新的业务内容。它是低耦合的一种体现。</p> <h3 id="抽象类实现接口的意义是什么"><a href="#抽象类实现接口的意义是什么" class="header-anchor">#</a> 抽象类实现接口的意义是什么？</h3> <p>在业务开发过程中会遇到处理流程，封装通用功能代码，让子类按照某种流程来处理。
+这个时候的接口其实是针对内部调用。</p> <div class="language-java line-numbers-mode"><pre class="language-java"><code>
+<span class="token comment">// 水果去皮</span>
+<span class="token keyword">public</span> <span class="token keyword">interface</span> <span class="token class-name">FruitDecorticate</span><span class="token punctuation">{</span>
+    <span class="token keyword">void</span> <span class="token function">decorticate</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 水果抽象类，并且实现吃水果的接口</span>
+<span class="token keyword">public</span> <span class="token keyword">abstract</span> <span class="token keyword">class</span> <span class="token class-name">Fruit</span> implement <span class="token class-name">FruitDecorticate</span><span class="token punctuation">{</span> 
+
+    <span class="token comment">// 水果名称、水果分类</span>
+    <span class="token keyword">private</span> <span class="token class-name">String</span> name<span class="token punctuation">;</span>
+    <span class="token keyword">private</span> <span class="token class-name">String</span> type<span class="token punctuation">;</span>
+    <span class="token keyword">private</span> <span class="token class-name">Boolean</span> isPeeling<span class="token punctuation">;</span>
+
+    <span class="token comment">// 初始化</span>
+    <span class="token keyword">public</span> <span class="token class-name">Fruit</span><span class="token punctuation">(</span><span class="token class-name">String</span> name<span class="token punctuation">,</span> <span class="token class-name">String</span> type<span class="token punctuation">,</span> <span class="token class-name">Boolean</span> isPeeling<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">=</span> name<span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>type <span class="token operator">=</span> type<span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>isPeeling <span class="token operator">=</span> isPeeling<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">// 水果清洗</span>
+    <span class="token keyword">public</span> <span class="token keyword">abstract</span> <span class="token keyword">void</span> <span class="token function">wash</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// 水果被吃掉</span>
+    <span class="token keyword">public</span> <span class="token keyword">abstract</span> <span class="token keyword">void</span> <span class="token function">eat</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// 看去皮前需不需要清洗水果</span>
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">decorticate</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+
+        <span class="token comment">// 首先清洗水果, 有的水果不需要清洗可以直接去皮</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>isPeeling<span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;不需要清洗，直接剥皮&quot;</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span><span class="token keyword">else</span><span class="token punctuation">{</span>
+            <span class="token function">wash</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 苹果类</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Apple</span> <span class="token keyword">extends</span> <span class="token class-name">Fruit</span><span class="token punctuation">{</span>
+    
+    <span class="token keyword">public</span> <span class="token class-name">Apple</span><span class="token punctuation">(</span><span class="token class-name">String</span> name<span class="token punctuation">,</span> <span class="token class-name">String</span> <span class="token class-name">Type</span><span class="token punctuation">,</span> <span class="token class-name">Boolean</span> isPeeling<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">super</span><span class="token punctuation">(</span>name<span class="token punctuation">,</span> type<span class="token punctuation">,</span> isPeeling<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">void</span> <span class="token function">wash</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;用水清洗&quot;</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">void</span> <span class="token function">eat</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;正在吃苹果&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 香蕉类</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Banana</span> <span class="token keyword">extends</span> <span class="token class-name">Fruit</span><span class="token punctuation">{</span>
+    
+    <span class="token keyword">public</span> <span class="token class-name">Banana</span><span class="token punctuation">(</span><span class="token class-name">String</span> name<span class="token punctuation">,</span> <span class="token class-name">String</span> <span class="token class-name">Type</span><span class="token punctuation">,</span> <span class="token class-name">Boolean</span> isPeeling<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">super</span><span class="token punctuation">(</span>name<span class="token punctuation">,</span> type<span class="token punctuation">,</span> isPeeling<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">void</span> <span class="token function">wash</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;用水清洗&quot;</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">void</span> <span class="token function">eat</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;正在吃香蕉&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 实例化</span>
+<span class="token class-name">Apple</span> apple <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Apple</span><span class="token punctuation">(</span><span class="token string">&quot;苹果&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;蔷薇科苹果属植物&quot;</span><span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+apple<span class="token punctuation">.</span><span class="token function">decorticate</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 用水清洗</span>
+apple<span class="token punctuation">.</span><span class="token function">eat</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 正在吃苹果</span>
+
+<span class="token class-name">Banana</span> banana <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Apple</span><span class="token punctuation">(</span><span class="token string">&quot;香蕉&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;芭蕉科芭蕉属植物&quot;</span><span class="token punctuation">,</span> <span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+banana<span class="token punctuation">.</span><span class="token function">decorticate</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 不需要清洗，直接剥皮</span>
+banana<span class="token punctuation">.</span><span class="token function">eat</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 正在吃香蕉</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br></div></div><h3 id="为何会存在多个接口的情况"><a href="#为何会存在多个接口的情况" class="header-anchor">#</a> 为何会存在多个接口的情况？</h3> <p>在当前类不满足业务使用的时候可以通过接口来对类进行拓展，根据业务的发展就会出现多个接口的情况。</p> <h2 id="关键词"><a href="#关键词" class="header-anchor">#</a> 关键词</h2> <blockquote><p>抽象类、接口、继承、多个接口、抽象类实现接口</p></blockquote></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/1-base/java/java-oop.html" class="prev">
+        Java - 面向对象
+      </a></span> <span class="next"><a href="/1-base/java/java-t-generic.html">
+        Java - 泛型
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.7efbe7ba.js" defer></script><script src="/assets/js/2.6911186c.js" defer></script><script src="/assets/js/7.7077d182.js" defer></script>
+  </body>
+</html>
